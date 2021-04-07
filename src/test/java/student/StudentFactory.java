@@ -18,7 +18,7 @@ public class StudentFactory {
     private static final String FILENAME = "screwYouGuys";
     private static final String EXTENSION = "png";
 
-    public static Student getRandomStudentWithAllFields() {
+    public static Student getRandomStudent() {
         Faker fake = new Faker();
         States state = fake.options().option(States.class);
         return Student.builder()
