@@ -17,12 +17,4 @@ public class StudentRegistrationFormTest extends TestBase {
                 .fillForm(student)
                 .checkData(student);
     }
-
-    @Test
-    final void unsuccessfulFillTest() {
-        studentRegistrationFormPage
-                .openPage()
-                .fillForm(student)
-                .checkData(student);
-    }
 }
