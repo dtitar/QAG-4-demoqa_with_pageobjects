@@ -16,7 +16,7 @@ public class TestBase {
     static void setup() {
         Configuration.startMaximized = true;
         addListener("AllureSelenide", new AllureSelenide());
-//        setupRemoteTestExecution();
+        setupRemoteTestExecution();
     }
 
     @AfterEach
@@ -34,6 +34,6 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.driverManagerEnabled = false;
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+        Configuration.remote = "https://dtitar:vnyc6rsb8y$@selenoid.autotests.cloud/wd/hub/";
     }
 }
