@@ -42,9 +42,7 @@ public class StudentRegistrationFormPage {
         step("Set subjects", () -> {
             $("#subjectsInput").setValue(student.getSubjects().get(0)).pressEnter();
         });
-        step("Set hobbies", () -> {
-            $(byText(student.getHobbies().get(0))).click();
-        });
+        step("Set hobbies", () -> $(byText(student.getHobbies().get(0))).click());
         step("Upload image", () -> {
             $("#uploadPicture").uploadFromClasspath("images/" + student.getFileName());
         });
@@ -53,9 +51,7 @@ public class StudentRegistrationFormPage {
             $("#react-select-3-input").setValue(student.getState()).pressEnter();
             $("#react-select-4-input").setValue(student.getCity()).pressEnter();
         });
-        step("Submit form", () -> {
-            $("#submit").click();
-        });
+        step("Submit form", () -> $("#submit").click());
         return this;
     }
 
