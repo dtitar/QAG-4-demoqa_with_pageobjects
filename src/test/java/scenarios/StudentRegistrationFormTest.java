@@ -1,5 +1,6 @@
 package scenarios;
 
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.Test;
 import pageobjects.StudentRegistrationFormPage;
 import student.Student;
@@ -11,6 +12,7 @@ public class StudentRegistrationFormTest extends TestBase {
     StudentRegistrationFormPage studentRegistrationFormPage = new StudentRegistrationFormPage();
 
     @Test
+    @Description("Успешное заполнение формы студента")
     final void successfulFillTest() {
         studentRegistrationFormPage
                 .openPage()
